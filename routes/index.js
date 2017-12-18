@@ -9,7 +9,6 @@ router.get('/', function(req, res, next) {
     req.session.count = 1;
   }
 
-  req.session.favoriteDog = 'German Shepard';
   console.log(req.session.count);
   res.render('index', {title: 'Express'});
 });
