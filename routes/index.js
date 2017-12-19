@@ -13,6 +13,11 @@ router.get('/', function(req, res, next) {
   res.render('index', {title: 'Express'});
 });
 
+router.post('/submitLogin', (req, res, next) => {
+  console.log(req.body.username);
+  res.render('index');
+});
+
 module.exports = {
   router
 };
